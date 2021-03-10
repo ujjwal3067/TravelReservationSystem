@@ -1,0 +1,19 @@
+2020-11-18 05:50:36,846 [myid:] - INFO  [main:QuorumPeerConfig@174] - Reading configuration from: /home/2018/lzheng29/512P3/apache-zookeeper-3.6.2-bin/bin/../conf/zoo-base.cfg
+2020-11-18 05:50:36,854 [myid:] - INFO  [main:QuorumPeerConfig@460] - clientPortAddress is 0.0.0.0:21806
+2020-11-18 05:50:36,854 [myid:] - INFO  [main:QuorumPeerConfig@464] - secureClientPort is not set
+2020-11-18 05:50:36,854 [myid:] - INFO  [main:QuorumPeerConfig@480] - observerMasterPort is not set
+2020-11-18 05:50:36,855 [myid:] - INFO  [main:QuorumPeerConfig@497] - metricsProvider.className is org.apache.zookeeper.metrics.impl.DefaultMetricsProvider
+2020-11-18 05:50:36,859 [myid:] - ERROR [main:QuorumPeerMain@98] - Invalid config, exiting abnormally
+org.apache.zookeeper.server.quorum.QuorumPeerConfig$ConfigException: Address unresolved: lab2-19.cs.mcgill.ca:22306 
+	at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.<init>(QuorumPeer.java:319)
+	at org.apache.zookeeper.server.quorum.flexible.QuorumMaj.<init>(QuorumMaj.java:92)
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.createQuorumVerifier(QuorumPeerConfig.java:674)
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parseDynamicConfig(QuorumPeerConfig.java:705)
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.setupQuorumPeerConfig(QuorumPeerConfig.java:679)
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parseProperties(QuorumPeerConfig.java:507)
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:194)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:124)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:90)
+Invalid config, exiting abnormally
+2020-11-18 05:50:36,860 [myid:] - INFO  [main:ZKAuditProvider@42] - ZooKeeper audit is disabled.
+2020-11-18 05:50:36,861 [myid:] - ERROR [main:ServiceUtils@42] - Exiting JVM with code 2
